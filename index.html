@@ -13,7 +13,6 @@
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=8vk0h1g3d9"></script>
 
 </head>
 
@@ -107,7 +106,20 @@
                                             class="text-muted ms-3 fw-bold"><a href="mailto:leeminji1944@gamil.com"
                                                 target="_blank">leeminji1944@gamil.com</a></span></li>
                                 </ul>
-                                <img src="https://naveropenapi.apigw.ntruss.com/map-static/v2/raster-cors?w=300&h=300&center=127.1054221,37.3591614&level=16&X-NCP-APIGW-API-KEY-ID={8vk0h1g3d9}">
+                                <div id="map" style="width:100%;height:400px;"></div>
+                                <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7cw6v38btg"></script>
+                                <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7cw6v38btg&callback=initMap"></script>
+<script>
+var mapOptions = {
+    center: new naver.maps.LatLng(37.3595704, 127.105399),
+    zoom: 10
+};
+
+var map = new naver.maps.Map('map', mapOptions);
+window.navermap_authFailure = function () {
+    alert('tlfvo')
+}
+</script>
                                 <div class="d-flex justify-content-end fs-2 gap-4 pe-2">
                                     <a class="text-gradient"
                                         href="https://incredible-muskox-2fa.notion.site/754359fb8b69416098e9a1afa8c65872?pvs=4"
@@ -153,7 +165,7 @@
                                 <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Front-end</span></h3>
                             </div>
                             <!-- cardBody -->
-                            <div class="d-flex justify-content-lg-start justify-content-center text-center flex-wrap">
+                            <div class="d-flex justify-content-lg-start justify-content-center ps-2 text-center flex-wrap">
                                 <div class="bg-light rounded-4 wh-100px"
                                 data-bs-placement="bottom" 
                                 data-bs-html="true"
@@ -347,7 +359,7 @@
                             </div>
                             <!-- cardBody -->
                             <!-- 1row -->
-                            <div class="d-flex justify-content-lg-start justify-content-center text-center flex-wrap">
+                            <div class="d-flex justify-content-lg-start justify-content-center text-center ps-2 flex-wrap">
                                 <div class="bg-light rounded-4 wh-100px"
                                 data-bs-placement="bottom" 
                                     data-bs-html="true"
