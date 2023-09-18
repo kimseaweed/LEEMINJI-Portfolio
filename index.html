@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>이민지 | portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=8vk0h1g3d9"></script>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-gradient">이민지 포트폴리오</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header -->
+        <header class="py-4">
+            <div class="container px-5 pb-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-center text-lg-start">
+                            <div class="fs-5 text-white mb-4 text-uppercase">
+                                <span class="badge bg-gradient-primary-to-secondary">Front-end</span> <span
+                                    class="badge bg-gradient-primary-to-secondary">Back-end</span>
+                            </div>
+                            <div class="fs-3 fw-light text-muted"></div>
+                            <h1 class="display-5 fw-bolder mb-5 text-break">
+                                <div class="lh-lg d-lg-block d-inline-block me-md-3">안녕하세요!</div><span
+                                    class="display-3 fw-bolder">웹 개발자</span><br><span
+                                    class="display-1 fw-bolder text-gradient d-inline">이민지</span>입니다.
+                            </h1>
+
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-lg-start">
+                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
+                                    href="resume.html">Resume</a>
+                                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
+                                    href="projects.html">Projects</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <!-- Header profile-->
+                        <div class="d-flex justify-content-center mt-lg-0">
+                            <div class="profile bg-gradient-primary-to-secondary">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </header>
+
+
+
+        <!-- About Section-->
+        <section class="bg-light py-5">
+            <div class="container px-xl-7 px-lg-5 px-0 pb-5">
+                <div class="justify-content-center">
+                    <h2 class="text-center display-3 fw-bolder text-gradient mb-5"><span
+                            class="d-inline border-bottom border-5" id="border-gr">About Me</span></h2>
+
+                    <div class="row">
+                        <div class="col-lg-5 px-0 col-12 text-center">
+                            <div class="clip-pic"> <img src="assets/leemj1.png" alt="이민지_사진" width="350px"> </div>
+                        </div>
+                        <div class="col-lg-7 col-12 d-flex align-items-center justify-content-md-center ">
+                            <div class="pt-5">
+                                <ul class="fs-5">
+                                    <li><i class="fs-2 me-3 bi bi-person-fill"></i> 이름 <span
+                                            class="text-muted ms-3 fw-bold">이민지</span></li>
+                                    <li><i class="fs-2 me-3 bi bi-geo-alt-fill"></i> 거주지 <span
+                                            class="text-muted ms-3 fw-bold">경기도 수원시</span></li>
+                                    <li><i class="fs-2 me-3 bi bi-balloon-fill"></i> 생년월일 <span
+                                            class="text-muted ms-3 fw-bold">1994.2.28 (만 29세)</span></li>
+                                    <li><i class="fs-2 me-3 bi bi-telephone-fill"></i> 연락처 <span
+                                            class="text-muted ms-3 fw-bold"><a href="tel:010-5694-1944">010 - 5694 -
+                                                1944</a></span></li>
+                                    <li><i class="fs-2 me-3 bi bi-envelope-fill"></i> 메일 <span
+                                            class="text-muted ms-3 fw-bold"><a href="mailto:leeminji1944@gamil.com"
+                                                target="_blank">leeminji1944@gamil.com</a></span></li>
+                                </ul>
+                                <img src="https://naveropenapi.apigw.ntruss.com/map-static/v2/raster-cors?w=300&h=300&center=127.1054221,37.3591614&level=16&X-NCP-APIGW-API-KEY-ID={8vk0h1g3d9}">
+                                <div class="d-flex justify-content-end fs-2 gap-4 pe-2">
+                                    <a class="text-gradient"
+                                        href="https://incredible-muskox-2fa.notion.site/754359fb8b69416098e9a1afa8c65872?pvs=4"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
+                                        data-bs-title="공부한 내용을<br>기록한 노트입니다."><img src="assets/lbj_notion_0.png" alt=""
+                                            width="50px"></a>
+                                    <a class="text-gradient" href="https://seaweed-nursery.tistory.com/"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
+                                        data-bs-title="알고 있는 내용을 <br>나누기 위한 <br>블로그입니다."><img src="assets/tstr.png"
+                                            alt="" width="50px"></a>
+                                    <a class="text-gradient" href="https://github.com/kimseaweed"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
+                                        data-bs-title="연습한 코드, 완성한 코드를 <br>저장한 깃허브입니다"><i
+                                            class="display-5 bi bi-github"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section-->
+        <section class="container py-5 my-3">
+            <!-- section header -->
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Skills</span></h1>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-around">
+                <!-- col 1 -->
+                <div class="col-md col-12 mb-2">
+                    <!-- card-front -->
+                    <div class="card shadow border-0 rounded-4 h-100">
+                        <div class="card-body">
+                            <!-- cardHeader -->
+                            <div class="d-flex align-items-center mb-2">
+                                <div
+                                    class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Front-end</span></h3>
+                            </div>
+                            <!-- cardBody -->
+                            <div class="d-flex justify-content-lg-start justify-content-center text-center flex-wrap">
+                                <div class="bg-light rounded-4 wh-100px"
+                                data-bs-placement="bottom" 
+                                data-bs-html="true"
+                                data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                data-bs-title="HTML·CSS" 
+                                data-bs-content="
+                                ◈ 반응형 디자인<br>
+                                ◈ Flex, Grid 활용<br>
+                                ◈ Keyframes,Transition을 <br>
+                                　활용한 애니메이션<br>
+                                ">
+                                    <div class="">
+                                        <img src="assets/HTML.png" alt="html">
+                                        <div>HTML·CSS</div>
+                                    </div>
+                                </div>
+                                <div class="bg-light rounded-4 wh-100px"
+                                data-bs-placement="bottom" 
+                                data-bs-html="true"
+                                data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                data-bs-title="JavaScript" 
+                                data-bs-content="
+                                ◈ 개발자모드를 활용한 디버깅<br>
+                                ◈ ES6 기본문법<br>
+                                ◈ promise 기본적인 사용법<br>
+                                ">
+                                    <div><img src="assets/JS.png" alt="html">
+                                        <div class="fs-7">JavaScript</div>
+                                    </div>
+                                </div>
+                                <div class="bg-light rounded-4 wh-100px"
+                                data-bs-placement="bottom" 
+                                data-bs-html="true"
+                                data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                data-bs-title="jquery" 
+                                data-bs-content="
+                                ◈ Ajax 요청 <br>
+                                ◈ 이벤트 핸들링<br>
+                                ">
+                                    <div><img src="assets/jquery_vertical_logo_icon_169489.png" alt="jquery">
+                                        <div>jquery</div>
+                                    </div>
+                                </div>
+                                <div class="bg-light rounded-4 wh-100px"
+                                data-bs-placement="bottom" 
+                                data-bs-html="true"
+                                data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                data-bs-title="Bootstrap" 
+                                data-bs-content="
+                                ◈ 기본 구성요소 사용 및 커스텀<br>
+                                ◈ 유틸리티, 그리드<br>
+                                ">
+                                    <div><img src="assets/bootstrap-logo-shadow.png" alt="Bootstrap">
+                                        <div class="fs-7">Bootstrap</div>
+                                    </div>
+                                </div>
+                                <!-- <div class="bg-light rounded-4 wh-100px"
+                                data-bs-placement="bottom" 
+                                data-bs-html="true"
+                                data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                data-bs-title="Bootstrap" 
+                                data-bs-content="
+                                ◈ 기본 구성요소 사용 및 커스텀<br>
+                                ◈ 유틸리티, 그리드사용 능숙<br>
+                                ">
+                                    <div><img src="assets/1631110818-logo-react-js.png" alt="ReactJS">
+                                        <div>ReactJS</div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- col 2 -->
+                <div class="col-md col-12 mb-2">
+                    <div class="mb-2">
+                        <!-- card-back -->
+                        <div class="card shadow border-0 rounded-4 h-50">
+                            <div class="card-body">
+                                <!-- cardHeader -->
+                                <div class="d-flex align-items-center mb-2">
+                                    <div
+                                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                        <i class="bi bi-hdd-network"></i>
+                                    </div>
+                                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Back-end</span></h3>
+                                </div>
+                                <!-- cardBody -->
+                                <!-- 1row -->
+                                  <div class="d-flex justify-content-center text-center">
+                                    <div class="bg-light rounded-4 wh-100px"
+                                    data-bs-placement="bottom" 
+                                    data-bs-html="true"
+                                    data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                    data-bs-title="Java" 
+                                    data-bs-content="
+                                    ◈ 객체지향 프로그래밍<br>
+                                    ◈ 사용자 정의 예외<br>
+                                    ◈ 컬렉션 프레임워크<br>
+                                    ">
+                                        <div><img src="assets/java.png" alt="java">
+                                            <div>Java</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded-4 wh-100px"
+                                    data-bs-placement="bottom" 
+                                    data-bs-html="true"
+                                    data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                    data-bs-title="JSP·Servlet" 
+                                    data-bs-content="
+                                    ◈ JDBC를 통한 CRUD 구현<br>
+                                    ◈ JSTL·EL<br>
+                                    ◈ 요청 및 응답 처리<br>
+                                    ◈ 세션,쿠키 관리<br>
+                                    ">
+                                        <div><img src="assets/java.png" alt="JSP">
+                                            <div>JSP·Servlet</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded-4 wh-100px"
+                                    data-bs-placement="bottom" 
+                                    data-bs-html="true"
+                                    data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                    data-bs-title="SpringBoot" 
+                                    data-bs-content="
+                                    ◈ MVC패턴<br>
+                                    ◈ RESTful API 설계<br>
+                                    ◈ Gradle을 통한 의존성 주입<br>
+                                    ◈ MyBatis를 통한 CRUD 구현<br>
+                                    ">
+                                        <div><img src="assets/boot.png" alt="SpringBoot">
+                                            <div class="fs-7">SpringBoot</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- card-db -->
+                        <div class="card shadow border-0 rounded-4 h-50">
+                            <div class="card-body">
+                                <!-- cardHeader -->
+                                <div class="d-flex align-items-center mb-2">
+                                    <div
+                                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                        <i class="bi bi-database-fill"></i>
+                                    </div>
+                                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Database</span></h3>
+                                </div>
+                                <!-- cardBody -->
+                                <!-- 1row -->
+                                <div class="d-flex justify-content-center text-center"
+                                data-bs-placement="bottom" 
+                                    data-bs-html="true"
+                                    data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                    data-bs-title="Database" 
+                                    data-bs-content="
+                                    ◈ Join, GroupBy, 서브쿼리 활용<br>
+                                    ◈ 윈도우함수 활용<br>
+                                    ◈ 데이터 모델링 및 설계에 대한 <br>　기본적인 이해<br>
+                                    ">
+                                    <div class="bg-light rounded-4 wh-100px">
+                                        <div><img src="assets/Oracle_SQL_Developer_logo.png" alt="oracle">
+                                            <div>Oracle</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded-4 wh-100px">
+                                        <div><img src="assets/mysql.png" alt="MySQL">
+                                            <div class="fs-8">MySQL·MariaDB</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- col 3 -->
+                <div class="col-xl col-12 mb-2">
+                    <!-- card-tools -->
+                    <div class="card shadow border-0 rounded-4 h-100">
+                        <div class="card-body">
+                            <!-- cardHeader -->
+                            <div class="d-flex align-items-center mb-2">
+                                <div
+                                    class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                    <i class="bi bi-tools"></i>
+                                </div>
+                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Tools</span></h3>
+                            </div>
+                            <!-- cardBody -->
+                            <!-- 1row -->
+                            <div class="d-flex justify-content-lg-start justify-content-center text-center flex-wrap">
+                                <div class="bg-light rounded-4 wh-100px"
+                                data-bs-placement="bottom" 
+                                    data-bs-html="true"
+                                    data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                    data-bs-title="eclipse·STS" 
+                                    data-bs-content="
+                                    ◈ JSP,Spring 프로젝트 생성 및 관리<br>
+                                    ◈ 플러그인 설치 및 관리<br>
+                                    ◈ 디버거 사용<br>
+                                    ◈ Git 연동<br>
+                                    ">
+                                    <div><img src="assets/eclipse-11-logo-png-transparent.png" alt="eclipse">
+                                        <div>eclipse·STS</div>
+                                    </div>
+                                </div>
+                                <div class="bg-light rounded-4 wh-100px"
+                                data-bs-placement="bottom" 
+                                    data-bs-html="true"
+                                    data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                    data-bs-title="IntelliJ" 
+                                    data-bs-content="
+                                    ◈ JSP,Spring 프로젝트 생성 및 관리<br>
+                                    ◈ ERD 생성<br>
+                                    ◈ 플러그인 설치 및 관리<br>
+                                    ◈ 디버거 사용<br>
+                                    ◈ Git 연동<br>
+                                    ">
+                                    <div><img src="assets/IntelliJ_IDEA_Icon.svg.png" alt="IntelliJ">
+                                        <div>IntelliJ</div>
+                                    </div>
+                                </div>
+                                <div class="bg-light rounded-4 wh-100px"
+                                    data-bs-placement="bottom" 
+                                    data-bs-html="true"
+                                    data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                    data-bs-title="VSCode" 
+                                    data-bs-content="
+                                    ◈ 플러그인 설치 및 관리<br>
+                                    ◈ Git 연동<br>
+                                    ">
+                                    <div><img src="assets/Visual_Studio_Code_1.35_icon.png" alt="VSCode">
+                                        <div>VSCode</div>
+                                    </div>
+                                </div>
+                                <div class="bg-light rounded-4 wh-100px"
+                                data-bs-placement="bottom" 
+                                    data-bs-html="true"
+                                    data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                    data-bs-title="git·GitHub" 
+                                    data-bs-content="
+                                    ◈ Branch 생성 및 관리<br>
+                                    ◈ PR, Merge <br>
+                                    ◈ GitHub Pages <br>
+                                    ">
+                                    <div><img src="assets/GitHub-Logo.png" alt="GitHub">
+                                        <div>git·GitHub</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- card certificate-->
+                    <!-- <div class="card shadow border-0 rounded-4 m-2">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <div
+                                    class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                    <i class="bi bi-person-vcard-fill"></i>
+                                </div>
+                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Certificate</span></h3>
+                            </div>
+                            <div class="d-flex justify-content-center text-center">
+                                <div class="bg-light rounded-4 wh-100px">
+                                    <div><img src="assets/q-net.png" alt="큐넷로고">
+                                        <div class="fs-8">정보처리<br>산업기사</div>
+                                    </div>
+                                </div>
+                                <div class="bg-light rounded-4 wh-100px">
+                                    <div><img src="assets/image (1).png" alt="SQLD">
+                                        <div>SQLD</div>
+                                    </div>
+                                </div>
+                                <div class="bg-light rounded-4 wh-100px">
+                                    <div><img src="assets/aws.png" alt="AWS">
+                                        <div class="fs-8">aws foundational</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container px-5 mb-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <span class="fs-7 text-muted fw-bold">[개인 | 23.4.30~23.5.14(14일)]</span>
+                                        <h2 class="fw-bolder">Slack 클론 웹</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum
+                                            illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero,
+                                            iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                    </div>
+                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d"
+                                        alt="..." />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card overflow-hidden shadow rounded-4 border-0  mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <span class="fs-7 text-muted fw-bold">[5인 | 23.07.27~23.08.23(27일) ]</span>
+                                        <h2 class="fw-bolder">감상토론회 커뮤니티 [감토]</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum
+                                            illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero,
+                                            iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                    </div>
+                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d"
+                                        alt="..." />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card overflow-hidden shadow rounded-4 border-0">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <span class="fs-7 text-muted fw-bold">[개인 | 23.09.18 ]</span>
+                                        <h2 class="fw-bolder">웹 포트폴리오</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum
+                                            illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero,
+                                            iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                    </div>
+                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d"
+                                        alt="..." />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to action section-->
+        <section class="py-5 bg-gradient-primary-to-secondary text-white">
+            <div class="container px-5 my-5">
+                <div class="text-center">
+                    <h2 class="display-4 fw-bolder mb-4">끝까지 봐주셔서 감사합니다!</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0">Copyright &copy; LEEminji 2023</div>
+                    <div class="small m-0">LastUpdate 23/09/11</div>
+                </div>
+                <div class="col-auto">
+                    <a href="https://startbootstrap.com/theme/personal">powered by startbootstrap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+
+</html>
