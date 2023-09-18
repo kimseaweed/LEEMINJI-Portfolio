@@ -41,6 +41,12 @@
 .wh-100px img{
   height: 30px;
 }
+#maptoggle:hover #mapboard{
+  display: block !important;
+}
+th{
+  min-width: 100px;
+}
 
 :root {
   --bs-indigo: #6610f2;
@@ -73,7 +79,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 30, 48, 243;
+  --bs-primary-rgb: 83,169,129;
   --bs-secondary-rgb: 226, 30, 128;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -6729,7 +6735,7 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: rgb(33,139,89) !important;
+  color: rgb(83,169,129) !important;
 }
 .link-primary:hover, .link-primary:focus {
   color: rgb(33,139,89) !important;
