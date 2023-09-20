@@ -24,5 +24,12 @@
 * API : 네이버 지도 api
 <br>
 
+## 📚 참고 자료 
+* https://codepen.io/gabriellewee/pen/MWqRZzp
+* https://codepen.io/kathleen-saz/pen/qBrGPp
+* https://startbootstrap.com/theme/personal
+<br>
+
 ## 📰 업데이트 내역
 * 23.09.20 완성
+* 23.09.21 헤더수정
