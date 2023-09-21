@@ -134,13 +134,13 @@ if (infowindows[i].getMap()) {
 }
 
 // navbar
-let scrolltop = $(window).scrollTop();
-let scrollBottom = $('body').height() - $(window).height() - 100;
-let about = $('header').height() - $(window).height() * 0.7;
-let skills = about + $('section#about').height();
-let project = skills + $('section#skills').height() + $(window).height() * 0.5;
 
 $(document).scroll(function () {
+    let scrolltop = $(window).scrollTop();
+    let scrollBottom = $('body').height() - $(window).height() - 100;
+    let about = $('header').height() - $(window).height() * 0.7;
+    let skills = about + $('section#about').height();
+    let project = skills + $('section#skills').height() + $(window).height() * 0.5;
 
 if (scrolltop > 50 && scrolltop < scrollBottom) {
 $('.navbar').removeClass('navhide');
