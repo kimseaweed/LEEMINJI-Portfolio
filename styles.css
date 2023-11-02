@@ -432,7 +432,7 @@ padding-right: 2px;
 .window-header .d-flex>div>i{
   position: absolute;
   font-weight: bolder;
-  font-size: 4px;
+  font-size: 10px;
 }
 .window-header .d-flex>div:nth-child(1) div{
   border-bottom: #000 2px solid;
